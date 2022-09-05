@@ -81,7 +81,9 @@ struct s1{
 
    let tt = s1(a: 44)
    print(tt.a)
+   
    // Error
+   // tt.la()
    // tt.a = 5
 
    // --------------------- Strings ---------------------  // 
