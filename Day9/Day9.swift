@@ -99,6 +99,7 @@
 print("// --------------------- Static Property ---------------------  //");
 
 // You can share specific properties and methods across all the instances of struct by declaring them as static
+// you can't use static methods to change non-static properties
 
 
 struct Human {

@@ -85,7 +85,7 @@ switch weather {
 case 1: print("1")
 case 2: print("2")
 case 7: print("7")
-case 7: print("Again")
+//case 7: print("Again")
 
 default : print("Jame")
 }
@@ -93,6 +93,27 @@ default : print("Jame")
 // Swift will only run the body of matching case. If you want execution to continue on to the next case, 
 // use the fallthrough keyword.
 // This default case is not needed if you already cover all other cases, such as with an enum.
+
+print("// --------------------- Switch Special Example ---------------------  //")
+
+enum WeatherType {
+    case sunny, rainy, cloudy(speed : Int)
+}
+
+let valuee = WeatherType.cloudy(speed: 6)
+switch valuee {
+case .sunny: 
+    print("It's sunny")
+case .rainy:
+    print("It's rainy outside")
+case .cloudy(let speed) where speed > 10: 
+print("Nice speed")
+case .cloudy: 
+    print("Cloudy Weather")
+
+}
+
+
 
 // --------------- Range ----------------- //
 switch 8 {

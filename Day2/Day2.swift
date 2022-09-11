@@ -129,3 +129,8 @@ enum Data : Int{
     case t
 }
 print(Activity.Running(direction: "String"))
+
+print("// --------------------- Access Modifiers ---------------------  //")
+
+// fileprivate -> this means code can be access only in same file
+// internal -> if you ship your code as the library or framework to use for others, they won't access that member.
